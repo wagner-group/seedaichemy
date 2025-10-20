@@ -1,9 +1,0 @@
-# FROM libpcap_fuzz
-ARG BASE_IMAGE=libpcap_fuzz
-FROM ${BASE_IMAGE}
-
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
-

@@ -1,3 +1,0 @@
-.env
-corpus/*
-afl-output/
