@@ -70,7 +70,7 @@ python3 combine.py -d ./combined_output pdf
 
 Press `Ctrl+C` once to stop generation early and combine intermediate outputs.
 
-### Running Magma Experiment
+## Running Magma Experiment
 
 If people trying to recreate Magma experiment results in the paper, please refer to this Magma fork https://github.com/jiangjingzhi2003/magma
 
