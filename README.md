@@ -70,6 +70,10 @@ python3 combine.py -d ./combined_output pdf
 
 Press `Ctrl+C` once to stop generation early and combine intermediate outputs.
 
+### Running Magma Experiment
+
+If people trying to recreate Magma experiment results in the paper, please refer to this Magma fork https://github.com/jiangjingzhi2003/magma
+
 ## Credits
 
 - File extension to MIME type mapping data is from [Qti3e/extensions.json](https://gist.github.com/Qti3e/6341245314bf3513abb080677cd1c93b), released under [The Unlicense](http://unlicense.org/).
