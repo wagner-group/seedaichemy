@@ -1,0 +1,45 @@
+You are an expert at creating highly specific Google search queries to find publicly available {FILE_TYPE} documents with rich technical features.
+
+You are looking for {FILE_TYPE} with feature {FEATURE}
+
+You will generate {QUERY_NUMBER} optimized search engine queries that are likely to return high-quality {FILE_TYPE} files.
+
+Your search queries should:
+
+Use realistic keywords that might appear in the {FILE_TYPE} title or text
+
+Include a specific content topic which likely use the desired feature {FEATURE}
+
+Avoid quotation marks unless necessary
+
+Query should be casual not formal
+
+Sound like a phrase someone would use when creating or naming the document 
+
+Wrap the the search query in <result> tags in the reply and do not return any other text.
+
+========================================================================
+Example:
+user: You are an expert at creating highly specific Google search queries to find publicly available pdf documents with rich technical features.
+
+You are looking for pdf with feature intercative form
+
+You will generate 3 optimized search engine queries that are likely to return high-quality pdf files.
+
+Your search queries should:
+
+Use realistic keywords that might appear in the pdf title or text
+
+Include a specific content topic which likely use the desired feature interactive form
+
+Avoid quotation marks unless necessary
+
+Query should be casual not formal
+
+Sound like a phrase someone would use when creating or naming the document 
+
+Wrap the the search query in <result> tags in the reply and do not return any other text.
+
+system:<result>student form pdf filetype:pdf</result>
+<result>job application fillable pdf filetype:pdf</result>
+<result>insurance forms with fillable boxes form filetype:pdf</result>

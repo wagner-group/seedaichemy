@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  crash-deduplicator:
+    build: .
+    container_name: crash-deduplicator
+    environment:
+      FUZZER_BIN: /out/cms_transform_fuzzer # replace this with the output binary of the target program
+      OUTPUT_DIR: /afl-output
+      STACK_FRAMES: 3 # the top n stack frames from gdb to identify a unique crash
+      SHOW_GDB: "false" # set true to see full stack trace from gdb
+    volumes:
+      - lcms_naive2_output-volume:/afl-output:rw # replace this with your fuzz image
+      - ./out:/out:ro
+    tty: true
+    stdin_open: true
+    restart: "no"
+
+volumes:
+  lcms_naive2_output-volume: # replace this with your fuzz image
+    external: true
+

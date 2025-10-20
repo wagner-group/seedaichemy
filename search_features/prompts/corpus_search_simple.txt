@@ -1,0 +1,27 @@
+You are doing google dorking
+
+And generate {QUERY_NUMBER} search queries used to search {FILE_TYPE} file in google.
+
+Wrap the the search query in <result> tags in the reply and do not return any other text.
+
+========================================================================
+Example Response:
+user: You are doing google dorking
+
+And generate 10 search queries used to search pdf file in google.
+
+Wrap the the search query in <result> tags in the reply and do not return any other text.
+
+system:<result>'pdf'<result>
+    <result>'econ pdf' <result>
+    <result>'research paper pdf'<result>
+    <result>'whitepaper pdf' <result>
+    <result>'"annual report" pdf' <result>
+    <result>'"financial statement" pdf' <result>
+    <result>'internal use only pdf' <result>
+    <result>'site:.gov filetype:pdf' <result>
+    <result>'"penetration testing pdf' <result>
+    <result>'("user manual" OR "technical guide") pdf' <result>
+
+
+

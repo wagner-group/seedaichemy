@@ -1,0 +1,29 @@
+services:
+  afl-openssl-main:
+    image: fuzz-openssl
+    container_name: "${COMPOSE_PROJECT_NAME:-default}-afl-openssl"
+    environment:
+      - CORPUS_DIR=/corpus
+      - OUTPUT_DIR=/afl-output
+      - FUZZER_ID=master
+    volumes:
+      - ./corpus:/corpus:rw
+      - ./corpus_min:/corpus_min
+      - output-volume:/afl-output:rw
+    tty: true
+    stdin_open: true
+    restart: "no"
+  afl-openssl-secondary:
+    image: fuzz-openssl
+    environment:
+    - CORPUS_DIR=/corpus
+    - OUTPUT_DIR=/afl-output
+    # Do not set FUZZER_ID for secondary containers.
+    volumes:
+      - ./corpus:/corpus:rw
+      - output-volume:/afl-output:rw
+    tty: true
+    stdin_open: true
+    restart: "no"
+volumes:
+  output-volume:

@@ -1,0 +1,25 @@
+services:
+  afl-libxml2_reader-main:
+    image: libxml2_reader_fuzz_ready
+    container_name: "${COMPOSE_PROJECT_NAME:-default}-afl-libxml2_reader"
+    environment:
+      CORPUS_DIR: /corpus
+      OUTPUT_DIR: /afl-output
+      FUZZER_ID: master
+      # Optional override:
+      FUZZER_BIN: /out/libxml2_xml_reader_for_file_fuzzer
+      STACK_FRAMES: 3
+      SHOW_GDB: "false"
+    volumes:
+      #- ./corpus:/corpus:rw
+      #- ./corpus_min:/corpus_min:rw
+      - ./out:/out:rw
+      - ./corpus:/corpus:rw
+      - output-volume:/afl-output:rw
+    tty: true
+    stdin_open: true
+    restart: "no"
+
+volumes:
+  output-volume:
+

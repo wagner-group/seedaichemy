@@ -1,0 +1,18 @@
+And generate {QUERY_NUMBER} search queries used to search {FILE_TYPE} file in google.
+
+Wrap the the search query in <result> tags in the reply and do not return any other text. 
+
+Don't use strong limit term: filetype
+
+========================================================================
+Example Response:
+user: 
+And generate 3 search queries used to search jpg file in google.
+
+Wrap the the search query in <result> tags in the reply and do not return any other text.
+
+Don't use strong limit term: filetype
+
+system:<result> satellite jpg pictures <result>
+    <result> jpg <result>
+    <result> sample jpg files <result>

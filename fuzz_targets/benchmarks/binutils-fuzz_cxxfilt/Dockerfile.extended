@@ -1,0 +1,16 @@
+# Dockerfile.extended
+ARG BASE_IMAGE=binutils-fuzz_cxxfilt_fuzz
+FROM ${BASE_IMAGE}
+
+#ENV CC=afl-clang-fast
+#ENV CXX=afl-clang-fast++
+#ENV CFLAGS="-O2 -g"
+#ENV CXXFLAGS="-O2 -g"
+#ENV LIB_FUZZING_ENGINE="-fsanitize=fuzzer"
+#ENV FUZZER_LIB="/usr/local/lib/afl/libAFLDriver.a"
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+

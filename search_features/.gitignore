@@ -1,0 +1,6 @@
+venv
+.env
+response-features/*
+response-corpus/*
+__pycache__/
+debug.log

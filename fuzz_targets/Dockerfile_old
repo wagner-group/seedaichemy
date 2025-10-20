@@ -1,0 +1,58 @@
+FROM aflplusplus/aflplusplus:latest
+
+# Use root for installation steps
+USER root
+
+# Install additional dependencies to match OSS-Fuzz-style base-builder
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    clang \
+    lld \
+    cmake \
+    ninja-build \
+    automake \
+    autoconf \
+    libtool \
+    make \
+    g++ \
+    zlib1g-dev \
+    libssl-dev \
+    pkg-config \
+    python3 \
+    python3-pip \
+    ca-certificates \
+    libxml2-dev \
+    libprotobuf-dev \
+    protobuf-compiler \
+    zip \
+    curl \
+    wget \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Optional: Upgrade pip & install Python tooling
+RUN python3 -m pip install --upgrade pip setuptools
+
+# OSS-Fuzz-compatible environment variables
+ENV SRC=/src
+ENV OUT=/out
+ENV WORK=/work
+
+RUN mkdir -p $SRC $OUT $WORK
+
+# Set default compiler and flags for libFuzzer compatibility
+#ENV CC=clang
+#ENV CXX=clang++
+#ENV CFLAGS="-O1 -fno-omit-frame-pointer -gline-tables-only -fsanitize=address,fuzzer-no-link"
+#ENV CXXFLAGS="-O1 -fno-omit-frame-pointer -gline-tables-only -fsanitize=address,fuzzer-no-link"
+#ENV LIB_FUZZING_ENGINE="-fsanitize=fuzzer"
+ENV CC=afl-clang-fast
+ENV CXX=afl-clang-fast++
+ENV CFLAGS="-O2 -g"
+ENV CXXFLAGS="-O2 -g"
+
+# (Optional) Create a fuzzing user and switch to it
+RUN useradd -m fuzzbuilder && chown -R fuzzbuilder:fuzzbuilder /src /out /work
+USER fuzzbuilder
+
+WORKDIR /home/fuzzbuilder
+

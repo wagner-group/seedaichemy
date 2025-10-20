@@ -1,0 +1,32 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Image that fuzzes libpcap with AFL++ (clang-16) and produces an llvm-cov report
+# ──────────────────────────────────────────────────────────────────────────────
+FROM libpcap_fuzz            
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Tools needed only for report generation
+USER root
+RUN apt-get update && apt-get install -y \
+    llvm-16 llvm-16-tools lcov wget tar cmake build-essential             
+
+RUN command -v llvm-profdata-16 && \
+    ln -sf $(command -v llvm-profdata-16) /usr/local/bin/llvm-profdata && \
+    ln -sf $(command -v llvm-cov-16) /usr/local/bin/llvm-cov
+ 
+RUN rm -rf /var/lib/apt/lists/*
+
+# ---------- AFL++ / coverage compiler flags ----------
+# ① AFL edge map   ② LLVM line/branch map
+ENV CFLAGS="-O0 -g -fprofile-instr-generate -fcoverage-mapping"
+ENV CXXFLAGS="$CFLAGS"
+ENV LDFLAGS="-lpthread"
+ENV LLVM_PROFILE_FILE="out/profraw/id_%m_%p.profraw"
+# Standard OSS-Fuzz style dirs
+
+RUN mkdir -p $SRC $OUT $WORK
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+COPY corpus /corpus
+ENTRYPOINT ["/entrypoint.sh"]
+

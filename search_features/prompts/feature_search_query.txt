@@ -1,0 +1,6 @@
+I want to find {FILE_TYPE} files on Google that include the feature {FEATURE} 
+— such as examples or documents that demonstrate, use, or explain it. 
+Please generate {QUERY_NUMBER} efficient unique Google search query using advanced search operators to help me find downloadable PDFs that include or demonstrate this feature. 
+Prioritize high-quality sources (e.g., .edu, .org, .gov) when possible.
+
+Wrap the the search query in <result> tags in the reply and do not return any other text.

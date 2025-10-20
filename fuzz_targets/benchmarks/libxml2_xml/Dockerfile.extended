@@ -1,0 +1,10 @@
+# Dockerfile.extended
+
+ARG BASE_IMAGE=libxml2_xml_fuzz
+FROM ${BASE_IMAGE}
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+

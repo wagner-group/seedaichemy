@@ -1,0 +1,37 @@
+services:
+  afl-libplist-main:
+    image: fuzz-testing-libplist
+    # Use COMPOSE_PROJECT_NAME (or default "default") to build a unique container name.
+    container_name: "${COMPOSE_PROJECT_NAME:-default}-afl-libplist"
+    environment:
+      - CORPUS_DIR=/corpus
+      - OUTPUT_DIR=/afl-output
+      - MINIMIZED_DIR=/corpus_min
+      - FUZZER_ID=master
+    volumes:
+      - ./corpus:/corpus:rw
+      - ./corpus_min:/corpus_min
+      - output-volume:/afl-output:rw
+    tty: true
+    stdin_open: true
+    restart: "no"
+  afl-secondary:
+    image: fuzz-testing-libplist
+    environment:
+      - CORPUS_DIR=/corpus
+      - OUTPUT_DIR=/afl-output
+    # Do not set FUZZER_ID for secondary containers.
+    volumes:
+      - ./corpus:/corpus:rw
+      - output-volume:/afl-output:rw
+    tty: true
+    stdin_open: true
+    restart: "no"
+volumes:
+  output-volume:
+    # driver: local
+    # driver_opts:
+    #   type: none
+    #   o: bind
+    #   device: ${PWD}/afl-output-volume
+

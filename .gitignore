@@ -1,0 +1,105 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# corpus paths
+testing/corpus/*
+fuzz_targets/json-c/corpus/*
+fuzz_targets/libpng/corpus/*
+*.xml
+*xml.csv
+common_crawl/corpus/*
+common_crawl/*_corpus/
+bug_tracker/trial*
+analysis_output/*
+filtered_corpora/*
+
+github_queries/*_corpus/
+github_queries/corpus_*/
+search_queries/*_corpus/
+search_features/*_corpus/
+bug_tracker/*_corpus
+corpus_output/*
+bug_tracker/*_corpus/
+common_crawl/trial*
+github_queries/trial*
+projects/analysis_output/*
+projects/corpus_analysis/reports/*
+search_queries/trial*
+search_features/trial*
+
+# log files
+common_crawl/*.csv
+common_crawl/*.log
+common_crawl/script_logs.txt
+search_features/*.log
+search_queries/*.log
+scripts/bug_trackers/script_logs.txt
+logs/
+*.log
+
+# unsynced files
+*.env
+venv/
+.env
+__pycache__/
+*.pyc
+
+github_queries/corpus_2/
+search_features/response-features/
+response-corpus
+response-features
+
+temp_clones/
+
+parallel_config.json
+parallel_corpus_logs/

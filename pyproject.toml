@@ -1,0 +1,42 @@
+[project]
+name = "fuzzing-for-llms"
+version = "0.1.0"
+description = "Tool for GitHub file search and download"
+authors = [{ name = "DW" }]
+dependencies = [
+    "annotated-types",
+    "anyio",
+    "beautifulsoup4",
+    "bs4",
+    "certifi",
+    "charset-normalizer",
+    "distro",
+    "dotenv",
+    "gitpython",
+    "google_search_results",
+    "googlesearch-python",
+    "h11",
+    "httpcore",
+    "httpx",
+    "idna",
+    "jiter",
+    "openai",
+    "pandas",
+    "pydantic",
+    "pydantic_core",
+    "pyathena",
+    "python-dotenv",
+    "PyYAML",
+    "requests",
+    "serpapi",
+    "sniffio",
+    "soupsieve",
+    "tqdm",
+    "typing-inspection",
+    "typing_extensions",
+    "urllib3"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

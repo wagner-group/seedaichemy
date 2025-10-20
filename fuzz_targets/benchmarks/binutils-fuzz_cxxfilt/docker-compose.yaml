@@ -1,0 +1,26 @@
+services:
+  afl-binutils-fuzz_cxxfilt-main:
+    image: binutils-fuzz_cxxfilt_fuzz_ready
+    privileged: true
+    container_name: "${COMPOSE_PROJECT_NAME:-default}-afl-binutils-fuzz_cxxfilt"
+    environment:
+      CORPUS_DIR: /corpus
+      OUTPUT_DIR: /afl-output
+      FUZZER_ID: master
+      # Optional override:
+      FUZZER_BIN: /out/fuzz_cxxfilt
+      STACK_FRAMES: 3
+      SHOW_GDB: "false"
+    volumes:
+      #- ./corpus:/corpus:rw
+      #- ./corpus_min:/corpus_min:rw
+      - ./out:/out:rw
+      - ./corpus:/corpus:rw
+      - output-volume:/afl-output:rw
+    tty: true
+    stdin_open: true
+    restart: "no"
+
+volumes:
+  output-volume:
+

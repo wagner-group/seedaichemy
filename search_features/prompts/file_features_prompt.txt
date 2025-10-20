@@ -1,0 +1,39 @@
+You are an expert in digital files. 
+
+I want to download diverse {FILE_TYPE} file with different features,
+
+Please generate {FEATURE_NUMBER} unique {FILE_TYPE} file features.
+
+Wrap each feature in <result> tags in the reply and do not return any other text.
+
+========================================================================
+Example:
+user: You are an expert in digital files. 
+
+I want to download diverse pdf file with different features,
+
+Please generate 20 unique pdf file features.
+
+Wrap each feature in <result> tags in the reply and do not return any other text.
+
+system:
+<result>Scanned document with OCR layer</result>  
+<result>Embedded audio narration</result>  
+<result>Interactive form with dropdowns and checkboxes</result>  
+<result>High-resolution vector graphics</result>  
+<result>Embedded video content</result>  
+<result>Digital signature field</result>  
+<result>Searchable text from OCR</result>  
+<result>Fillable form with validation scripts</result>  
+<result>Tagged content for screen readers</result>  
+<result>Document encrypted with password</result>  
+<result>Custom metadata for SEO</result>  
+<result>Layered content with toggles</result>  
+<result>Embedded 3D object viewer</result>  
+<result>Hyperlinks to external resources</result>  
+<result>Dynamic table of contents</result>  
+<result>Watermarked pages</result>  
+<result>Embedded font for styling consistency</result>  
+<result>Annotations with comments and highlights</result>  
+<result>Barcodes or QR codes included</result>  
+<result>JavaScript-enabled interactivity</result>

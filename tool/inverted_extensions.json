@@ -1,0 +1,396 @@
+{
+  "application/vnd.lotus-1-2-3": [
+    "123",
+    "wk4",
+    "wk3",
+    "wk1"
+  ],
+  "application/cpl+xml": [
+    "cpl"
+  ],
+  "application/epub+zip": [
+    "epub"
+  ],
+  "application/font-sfnt": [
+    "ttf"
+  ],
+  "application/gzip": [
+    "gz",
+    "tgz"
+  ],
+  "application/mac-binhex40": [
+    "hqx"
+  ],
+  "application/msword": [
+    "doc"
+  ],
+  "application/mxf": [
+    "mxf"
+  ],
+  "application/octet-stream": [
+    "lha",
+    "lzh",
+    "exe",
+    "class",
+    "dll",
+    "img",
+    "iso"
+  ],
+  "application/ogg": [
+    "ogx"
+  ],
+  "application/oxps": [
+    "oxps"
+  ],
+  "application/pdf": [
+    "pdf"
+  ],
+  "application/pkcs10": [
+    "p10"
+  ],
+  "application/pls+xml": [
+    "pls"
+  ],
+  "application/postscript": [
+    "eps",
+    "ai"
+  ],
+  "application/rtf": [
+    "rtf"
+  ],
+  "application/tamp-sequence-adjust": [
+    "tsa"
+  ],
+  "application/vnd.epson.msf": [
+    "msf"
+  ],
+  "application/vnd.fdf": [
+    "fdf"
+  ],
+  "application/vnd.framemaker": [
+    "fm"
+  ],
+  "application/vnd.google-earth.kmz": [
+    "kmz"
+  ],
+  "application/vnd.groove-tool-template": [
+    "tpl"
+  ],
+  "application/vnd.kde.kword": [
+    "kwd"
+  ],
+  "application/vnd.lotus-approach": [
+    "apr"
+  ],
+  "application/vnd.lotus-notes": [
+    "nsf",
+    "ntf"
+  ],
+  "application/vnd.lotus-organizer": [
+    "org"
+  ],
+  "application/vnd.lotus-wordpro": [
+    "lwp",
+    "sam"
+  ],
+  "application/vnd.mif": [
+    "mif"
+  ],
+  "application/vnd.mozilla.xul+xml": [
+    "xul"
+  ],
+  "application/vnd.ms-asf": [
+    "asf"
+  ],
+  "application/vnd.ms-cab-compressed": [
+    "cab"
+  ],
+  "application/vnd.ms-excel": [
+    "xls",
+    "xla"
+  ],
+  "application/vnd.ms-htmlhelp": [
+    "chm"
+  ],
+  "application/vnd.ms-powerpoint": [
+    "ppt",
+    "pps"
+  ],
+  "application/vnd.ms-works": [
+    "wks"
+  ],
+  "application/vnd.ms-wpl": [
+    "wpl"
+  ],
+  "application/vnd.ms-xpsdocument": [
+    "xps"
+  ],
+  "application/vnd.multiad.creator.cif": [
+    "cif"
+  ],
+  "application/vnd.oasis.opendocument.presentation": [
+    "odp"
+  ],
+  "application/vnd.oasis.opendocument.text": [
+    "odt"
+  ],
+  "application/vnd.oasis.opendocument.text-template": [
+    "ott"
+  ],
+  "application/vnd.openxmlformats-officedocument.presentationml.presentation": [
+    "pptx"
+  ],
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [
+    "xlsx"
+  ],
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document": [
+    "docx"
+  ],
+  "application/vnd.palm": [
+    "prc",
+    "pdb"
+  ],
+  "application/vnd.Quark.QuarkXPress": [
+    "qxd"
+  ],
+  "application/vnd.rar": [
+    "rar"
+  ],
+  "application/vnd.smaf": [
+    "mmf"
+  ],
+  "application/vnd.tcpdump.pcap": [
+    "cap",
+    "dmp"
+  ],
+  "application/vnd.wordperfect": [
+    "wpd"
+  ],
+  "application/vnd.xara": [
+    "xar"
+  ],
+  "application/vnd.yamaha.smaf-phrase": [
+    "spf"
+  ],
+  "application/xml-dtd": [
+    "dtd"
+  ],
+  "application/zip": [
+    "zip"
+  ],
+  "audio/AMR": [
+    "amr"
+  ],
+  "audio/basic": [
+    "au"
+  ],
+  "audio/mp4": [
+    "m4a"
+  ],
+  "audio/mpeg": [
+    "mp3"
+  ],
+  "audio/ogg": [
+    "oga",
+    "ogg"
+  ],
+  "audio/qcelp": [
+    "qcp"
+  ],
+  "audio/vnd.audikoz": [
+    "koz"
+  ],
+  "image/bmp": [
+    "bmp",
+    "dib"
+  ],
+  "image/emf": [
+    "emf"
+  ],
+  "image/fits": [
+    "fits"
+  ],
+  "image/gif": [
+    "gif"
+  ],
+  "image/jp2": [
+    "jp2"
+  ],
+  "image/jpeg": [
+    "jpg",
+    "jpeg",
+    "jpe",
+    "jfif"
+  ],
+  "image/png": [
+    "png"
+  ],
+  "image/tiff": [
+    "tiff",
+    "tif"
+  ],
+  "image/vnd.adobe.photoshop": [
+    "psd"
+  ],
+  "image/vnd.dwg": [
+    "dwg"
+  ],
+  "image/vnd.microsoft.icon": [
+    "ico"
+  ],
+  "image/vnd.ms-modi": [
+    "mdi"
+  ],
+  "image/vnd.radiance": [
+    "hdr"
+  ],
+  "image/vnd.zbrush.pcx": [
+    "pcx"
+  ],
+  "image/wmf": [
+    "wmf"
+  ],
+  "message/rfc822": [
+    "eml",
+    "art"
+  ],
+  "text/cache-manifest": [
+    "manifest"
+  ],
+  "text/plain": [
+    "log"
+  ],
+  "text/tab-separated-values": [
+    "tsv"
+  ],
+  "text/vcard": [
+    "vcf"
+  ],
+  "text/vnd.DMClientScript": [
+    "dms"
+  ],
+  "text/vnd.graphviz": [
+    "dot"
+  ],
+  "text/vnd.trolltech.linguist": [
+    "ts"
+  ],
+  "video/3gpp": [
+    "3gp"
+  ],
+  "video/3gpp2": [
+    "3g2"
+  ],
+  "video/mp4": [
+    "mp4",
+    "m4v"
+  ],
+  "video/mpeg": [
+    "mpeg",
+    "mpg"
+  ],
+  "video/ogg": [
+    "ogv"
+  ],
+  "video/quicktime": [
+    "mov"
+  ],
+  "application/mac-compactpro": [
+    "cpt"
+  ],
+  "application/vnd.sun.xml.calc": [
+    "sxc"
+  ],
+  "application/vnd.sun.xml.draw": [
+    "sxd"
+  ],
+  "application/vnd.sun.xml.impress": [
+    "sxi"
+  ],
+  "application/vnd.sun.xml.writer": [
+    "sxw"
+  ],
+  "application/x-bzip2": [
+    "bz2"
+  ],
+  "application/x-cdlink": [
+    "vcd"
+  ],
+  "application/x-csh": [
+    "csh"
+  ],
+  "application/x-futuresplash": [
+    "spl"
+  ],
+  "application/x-java-archive": [
+    "jar"
+  ],
+  "application/x-rpm": [
+    "rpm"
+  ],
+  "application/x-shockwave-flash": [
+    "swf"
+  ],
+  "application/x-stuffit": [
+    "sit"
+  ],
+  "application/x-tar": [
+    "tar"
+  ],
+  "application/x-xpinstall": [
+    "xpi"
+  ],
+  "application/x-xz": [
+    "xz"
+  ],
+  "audio/midi": [
+    "mid",
+    "midi"
+  ],
+  "audio/x-aiff": [
+    "aiff"
+  ],
+  "audio/x-flac": [
+    "flac"
+  ],
+  "audio/x-ms-wma": [
+    "wma"
+  ],
+  "audio/x-pn-realaudio": [
+    "ram",
+    "rm"
+  ],
+  "audio/x-realaudio": [
+    "ra"
+  ],
+  "audio/x-wav": [
+    "wav"
+  ],
+  "image/webp": [
+    "webp"
+  ],
+  "image/x-portable-graymap": [
+    "pgm"
+  ],
+  "image/x-rgb": [
+    "rgb"
+  ],
+  "video/webm": [
+    "webm"
+  ],
+  "video/x-flv": [
+    "flv"
+  ],
+  "video/x-matroska": [
+    "mkv"
+  ],
+  "video/x-ms-asf": [
+    "asx"
+  ],
+  "video/x-ms-wmv": [
+    "wmv"
+  ],
+  "video/x-msvideo": [
+    "avi"
+  ]
+}
